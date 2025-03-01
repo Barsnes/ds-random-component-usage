@@ -1,15 +1,19 @@
-@import "tailwindcss";
-
-@theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  font-feature-settings: 'cv05' 1; /* Enable lowercase l with tail */
+}
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+.wrapper {
+  margin: var(--ds-size-4);
+  padding: var(--ds-size-12);
+}
+
+.random {
+  border: 1px solid var(--ds-color-neutral-border-strong);
+  border-radius: var(--ds-border-radius-md);
+  margin-top: var(--ds-size-4);
+  padding: var(--ds-size-4)
 }

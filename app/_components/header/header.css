@@ -1,0 +1,22 @@
+.header {
+  padding: var(--ds-size-6) var(--ds-size-4);
+  background-color: var(--ds-color-background-tinted);
+  border-bottom: 1px solid var(--ds-color-border-subtle);
+  display: flex;
+  justify-content: space-between;
+
+  & ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    & li {
+      margin-left: var(--ds-size-4);
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}
